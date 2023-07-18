@@ -43,7 +43,7 @@ public class OrderItem {
         return price;
     }
 
-    @Override
+    /*@Override
     public String toString() {
         return getProduct().getName() + ", " +
                 "$" + String.format("%.2f", price) + ", " +
@@ -51,5 +51,17 @@ public class OrderItem {
                 quantity + ", " +
                 "Subtotal: " + "$" +
                 String.format("%.2f", subTotal()) + "\n";
+    }*/
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append(getProduct().getName() + ", ");
+        sb.append("$");
+        sb.append(String.format("%.2f", price) + ", ");
+        sb.append("Quantity: ");
+        sb.append(quantity + ", ");
+        sb.append("Subtotal: $");
+        sb.append(String.format("%.2f", subTotal()) + "\n");
+
+        return sb.toString();
     }
 }

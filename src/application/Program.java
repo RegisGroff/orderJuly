@@ -70,7 +70,6 @@ public class Program {
             System.out.print(s);
         }
 
-        System.out.println();
         System.out.printf("Total price: %.2f%n", order.total());
 
         sc.close();
