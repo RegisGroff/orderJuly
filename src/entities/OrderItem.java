@@ -43,15 +43,6 @@ public class OrderItem {
         return price;
     }
 
-    /*@Override
-    public String toString() {
-        return getProduct().getName() + ", " +
-                "$" + String.format("%.2f", price) + ", " +
-                "Quantity: " +
-                quantity + ", " +
-                "Subtotal: " + "$" +
-                String.format("%.2f", subTotal()) + "\n";
-    }*/
     public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append(getProduct().getName() + ", ");

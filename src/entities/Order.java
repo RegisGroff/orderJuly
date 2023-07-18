@@ -2,12 +2,9 @@ package entities;
 
 import entities.Enum.OrderStatus;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 public class Order {
     private LocalDateTime moment;

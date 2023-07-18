@@ -1,8 +1,6 @@
 package entities;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 public class Client {
     private String name;
@@ -42,8 +40,4 @@ public class Client {
         this.birthDate = birthDate;
     }
 
-    @Override
-    public String toString() {
-        return name + " ("+birthDate+") - " + email;
-    }
 }
